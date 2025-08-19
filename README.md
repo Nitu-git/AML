@@ -1,17 +1,46 @@
-# FLAME-AI-Challenge-2024-MIS-382N
-My team and I tried to predict the fire line for the next 20 time stamps based on just the first 5 timestamps - FLAME AI 2024 challenge! This project was done as a part of the Advanced Machine Learning Coursework for MSBA.
+# FLAME-AI-Challenge-2024
+As part of the Advanced Machine Learning coursework (MSBA), we joined the FLAME AI 2024 challenge to tackle wildfire forecasting. The goal was to predict the fireline for 20 future timestamps using just the first 5 frames of data.
 
-# Methods Tried:
-1.Optical Flow
+# Approach
 
-2.XGBoost
+We explored a mix of classical and deep learning methods to balance accuracy and interpretability:
 
-3.PredFormer
+ - Optical Flow for motion-based tracking
 
-4.Convolutional Neural Nets with LSTM 
+ - XGBoost for fast, tree-based predictions
 
+ - PredFormer (transformer-based architecture)
 
-Please go through the presenation given in this project repository for a brief on the data and the results 
+ - CNN–LSTM hybrids for spatio-temporal learning
 
-## The following is the link to a Medium article summarizing the team's findings :
-https://medium.com/@pillai.anjali/forecasting-flames-driving-impact-with-spatio-temporal-ml-53e4f263f17f
+ - Physics-Informed Neural Networks (PINNs) to integrate physical constraints into the predictions
+
+# Results
+
+Our models reached a mean squared error (MSE) of ~0.011, showing strong accuracy in predicting wildfire spread patterns.
+
+# How to Run
+
+ - Clone this repository
+
+ - Install dependencies with pip install -r requirements.txt
+
+ - Open any of the .ipynb notebooks in Jupyter/Colab
+
+ - Run cells in sequence to reproduce results for each method (My have to correct source data path)
+
+# Applications
+
+This work can support:
+
+ - Emergency responders with faster and smarter resource allocation
+
+ - Insurers with more reliable wildfire risk modeling
+
+ - Utilities in protecting critical infrastructure from fire damage
+
+# Learn More
+
+Slides and results are included in this repository
+
+Medium write-up: [Forecasting Flames – Spatio-Temporal ML for Wildfires](https://medium.com/@pillai.anjali/forecasting-flames-driving-impact-with-spatio-temporal-ml-53e4f263f17f)
